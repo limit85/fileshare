@@ -1,0 +1,57 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div style="padding-bottom: 20px;">
+  <table class="files-table">
+    <thead>
+      <tr>
+        <!--<th style="width: 90px;">&nbsp;</th>-->
+        <th>File name</th>
+        <th>Published</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="file in files">
+<!--        <td>
+          <a href="javascript:void(0);" ng-click="edit(file)" alt="Edit tags"><i class="glyphicon glyphicon-edit"></i></a>
+          <a href="javascript:void(0);" ng-click="share(file)"><i class="glyphicon glyphicon-share"></i></a>
+          <a href="/api/files/{{file.hash}}/download" ng-click="download(file)"><i class="glyphicon glyphicon-download"></i></a>
+        </td>-->
+        <td><a href="/{{file.hash}}">{{file.name}}</a>&nbsp;({{file.size | sizeConverter : 1}})</td>
+        <td class="center">{{file._id| idToDate | date : "dd/MM/yyyy"}}</td>
+        <td class="tags">
+          <span ng-repeat="tag in file.tags track by $index">{{tag}}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!--  <div style="display: none">
+      <div class="row" style="border-bottom: dashed 1px #aaaaaa;">
+        <h3>{{file.name}}</h3>
+        <div class="row">
+          <div class="col-md-6">Uploaded</div>
+          <div class="col-md-6">{{file.date}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Tags</div>
+          <div class="col-md-6 item-tags">
+            {{file._id}}
+            <input ui-select2="select2Options" ng-model="file.tags" style="width: 200px;" ng-change="updateFile(file)"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Status</div>
+          <div class="col-md-6">{{file.status}}</div>
+        </div>
+      </div>
+    </div>-->
+</div>
+
+<div class="footer">
+</div>
+
+<!-- Dialogs -->
+
+
+
+<!-- End Dialogs -->

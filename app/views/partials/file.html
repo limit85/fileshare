@@ -1,0 +1,28 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div style="padding-bottom: 20px;">
+  <h3><a href="javascript:void(0);" ng-click='download()'>{{file.name}}</a>&nbsp;({{file.size| sizeConverter : 1}})</h3>
+  <div class="tags">
+    <span ng-repeat="tag in file.tags track by $index">{{tag}}</span>
+  </div>
+  <div>
+    <i class="glyphicon glyphicon-time"></i>&nbsp;{{file._id | idToDate | date : "MMM dd, yyyy HH:mm"}}
+    <i class="glyphicon glyphicon-share"></i>&nbsp;
+    <div style="display: inline-block">
+      <ul ng-social-buttons
+          data-url="'http://google.com'"
+          proxyUrl='/proxy'
+          data-title="'test'"
+          data-description="'test2'"
+          data-image="'http://s3.mistinfo.com/32/d8/32d8eab76f4c242f665bda66b5edc6c5.jpg'">
+        <li class="ng-social-facebook">Facebook</li>
+        <li class="ng-social-twitter">Twitter</li>
+      </ul>
+      
+    </div>
+  </div>
+  <div>
+    <a href="javascript:void(0);" class="btn btn-info" ng-click="edit()">Edit</a>
+    <a href="javascript:void(0);" class="btn btn-danger" ng-click="remove()">Remove</a>
+  </div>
+</div>

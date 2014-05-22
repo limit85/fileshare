@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="test">
+            <file>file:/home/limit/projects/fileshare/lib/routes.js</file>
+            <file>file:/home/limit/projects/fileshare/app/views/partials/edit_file_dialog.html</file>
+            <file>file:/home/limit/projects/fileshare/lib/models/user.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/controllers/files.js</file>
+            <file>file:/home/limit/projects/fileshare/app/bower_components/angular-social/angular-social.src.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/middleware.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/env/development.js</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/directives/idToDate.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/.jshintrc</file>
+            <file>file:/home/limit/projects/fileshare/bower.json</file>
+            <file>file:/home/limit/projects/fileshare/app/views/partials/navbar.html</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/controllers/navbar.js</file>
+            <file>file:/home/limit/projects/fileshare/app/views/index.html</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/app.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/config.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/controllers/users.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/env/production.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/env/test.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/controllers/index.js</file>
+            <file>file:/home/limit/projects/fileshare/node_modules/express/lib/router/route.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/models/thing.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/controllers/api.js</file>
+            <file>file:/home/limit/projects/fileshare/app/views/partials/file_list.html</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/controllers/file.js</file>
+            <file>file:/home/limit/projects/fileshare/app/views/partials/file.html</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/express.js</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/controllers/file_list.js</file>
+            <file>file:/home/limit/projects/fileshare/app/styles/main.scss</file>
+            <file>file:/home/limit/projects/fileshare/lib/models/file.js</file>
+            <file>file:/home/limit/projects/fileshare/lib/config/env/all.js</file>
+            <file>file:/home/limit/projects/fileshare/Gruntfile.js</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/directives/mongooseError.js</file>
+            <file>file:/home/limit/projects/fileshare/app/scripts/directives/sizeConverter.js</file>
+        </group>
+    </open-files>
+</project-private>
