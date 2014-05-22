@@ -19,7 +19,8 @@
     "ejs": "~0.8.4",
     "grunt-contrib-compass": "~0.7.2",
     "underscore": "~1.6.0",
-    "hashids": "~0.3.3"
+    "hashids": "~0.3.3",
+    "connect-multiparty": "~1.0.3"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
