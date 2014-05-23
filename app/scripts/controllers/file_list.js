@@ -2,21 +2,20 @@
 
 angular.module('fileshareApp').controller('FileListCtrl', function($scope, $http, $q) {
   $scope.files = [];
-  $scope.searchStr = "";
+  $scope.searchStr = '';
 
   $scope.$watch('searchStr', function(newFalue, oldValue, scope) {
-    console.warn('search', newFalue, oldValue, scope);
     $scope.updateFileList();
   });
 
-  var requestForFriends;
+  var requestHandle;
   var abortRequest = function() {
-    return(requestForFriends && requestForFriends.abort());
+    return(requestHandle && requestHandle.abort());
   };
 
   $scope.updateFileList = function() {
     abortRequest();
-    (requestForFriends = getFiles($scope.searchStr)).then(function(files) {
+    (requestHandle = getFiles($scope.searchStr)).then(function(files) {
       $scope.files = files;
     });
   };
@@ -24,14 +23,14 @@ angular.module('fileshareApp').controller('FileListCtrl', function($scope, $http
   function getFiles(searchStr) {
     var deferredAbort = $q.defer();
     var request = $http({
-      method: "get",
-      url: "/api/files/search/" + searchStr,
+      method: 'get',
+      url: '/api/files/search/' + searchStr,
       timeout: deferredAbort.promise
     });
     var promise = request.then(function(response) {
       return(response.data);
-    }, function(response) {
-      return($q.reject("Something went wrong"));
+    }, function() {
+      return($q.reject('Something went wrong'));
     });
     promise.abort = function() {
       deferredAbort.resolve();

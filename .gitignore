@@ -6,4 +6,4 @@ app/bower_components
 heroku
 /views
 dist
-/downloads
+/nbproject
